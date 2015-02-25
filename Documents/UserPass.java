@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class UserPass
+{
+	public static void main(String [] args) 
+	{
+		String user="Guest";
+		String pass="password";
+		String userIn=" ";
+		String passIn=" ";
+		
+		System.out.println("Username:");
+		Scanner key = new Scanner(System.in);
+		userIn = key.next();
+		
+		System.out.println("Password:");
+		Scanner key2 = new Scanner(System.in);
+		passIn = key2.next();
+		
+		if(userIn.compareTo("Guest") == 0) 
+		{	
+			if(passIn.compareTo("password") == 0)
+			{
+				System.out.println("Welcome Guest!");
+			}
+			else
+			{
+				System.out.println("Wrong Username or Password!");
+			}
+		}
+		else 
+		{
+			System.out.println("Wrong Username or Password!");
+			
+		}
+	}
+}
