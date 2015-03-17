@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+public class Change
+{
+	final static int PEN=1, NIC=5, DIM=10, QUA=25;
+	public static void main(String [] args)
+	{
+		String StrDollars;
+		int pen,nic,dim,qua,dollars;
+		float inDollars;
+		StrDollars = JOptionPane.showInputDialog("How much money do you have?");
+		inDollars = Float.parseFloat(StrDollars);
+		dollars = Math.round(inDollars*100);
+		
+		qua=dollars/QUA;
+		dollars=dollars-(qua*QUA);
+		dim=dollars/DIM;
+		dollars=dollars-(dim*DIM);
+		nic=dollars/NIC;
+		dollars=dollars-(nic*NIC);
+		pen=dollars;
+
+		JOptionPane.showMessageDialog(null, "That is equal to:\n" + qua + " quarters\n" + dim
+			+ " dimes\n" + nic + " nickels\n" + pen + " pennies");
+	}
+}
