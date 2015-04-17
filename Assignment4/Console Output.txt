@@ -1,0 +1,3 @@
+Room 1 has yellow walls, hard wood floors, and 1 window(s)
+Room 2 has purple walls, tile floors, and 0 window(s)
+Room 3 has white walls, carpetted floors, and 3 window(s)
